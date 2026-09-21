@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>skiQ — Surgical EQ for Trap, Drill & Modern Hip-Hop | skiAudio</title>
+
+<meta name="description" content="skiQ by skiAudio — a free surgical EQ and effect designed for Trap, Drill and Modern Hip-Hop production.">
+<meta name="theme-color" content="#07090b">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+:root{
+    --bg:#07090b;
+    --bg2:#0b0e11;
+    --panel:#101419;
+    --panel2:#13181d;
+    --line:rgba(255,255,255,.09);
+    --text:#f4f7f6;
+    --muted:#9ba6a3;
+    --accent:#21f0a4;
+    --accent2:#00c98a;
+    --shadow:0 30px 90px rgba(0,0,0,.55);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(circle at 78% 15%,rgba(33,240,164,.09),transparent 30%),
+        radial-gradient(circle at 15% 45%,rgba(0,201,138,.045),transparent 28%),
+        var(--bg);
+    color:var(--text);
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(1160px,calc(100% - 40px));
+    margin:auto;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    backdrop-filter:blur(18px);
+    background:rgba(7,9,11,.78);
+    border-bottom:1px solid var(--line);
+}
+
+.nav{
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:-.5px;
+}
+
+.brand span{
+    color:var(--accent);
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+.nav-links a:hover{
+    color:var(--text);
+}
+
+.hero{
+    padding:105px 0 95px;
+    min-height:720px;
+    display:flex;
+    align-items:center;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:70px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid rgba(33,240,164,.28);
+    background:rgba(33,240,164,.06);
+    color:var(--accent);
+    padding:7px 12px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.2px;
+}
+
+.hero h1{
+    margin-top:22px;
+    font-size:clamp(64px,9vw,112px);
+    line-height:.86;
+    letter-spacing:-6px;
+    font-weight:900;
+}
+
+.hero h1 span{
+    color:var(--accent);
+}
+
+.hero-subtitle{
+    margin-top:28px;
+    max-width:650px;
+    font-size:22px;
+    color:#d4dcda;
+    line-height:1.4;
+}
+
+.hero-copy{
+    margin-top:18px;
+    max-width:650px;
+    color:var(--muted);
+    font-size:16px;
+}
+
+.buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+    margin-top:32px;
+}
+
+.button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:0 21px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    font-size:14px;
+    font-weight:800;
+    transition:.2s ease;
+}
+
+.button-primary{
+    color:#04110b;
+    background:var(--accent);
+    border-color:var(--accent);
+}
+
+.button-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 35px rgba(33,240,164,.2);
+}
+
+.button-secondary:hover{
+    border-color:rgba(33,240,164,.4);
+    color:var(--accent);
+}
+
+.hero-art{
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.hero-art::before{
+    content:"";
+    position:absolute;
+    inset:12%;
+    background:rgba(33,240,164,.12);
+    filter:blur(80px);
+    border-radius:50%;
+    z-index:-1;
+}
+
+.hero-art img{
+    width:100%;
+    max-width:460px;
+    height:auto;
+    display:block;
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:var(--shadow),0 0 70px rgba(33,240,164,.08);
+}
+
+section{
+    padding:95px 0;
+}
+
+.section-label{
+    color:var(--accent);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title{
+    margin-top:10px;
+    font-size:42px;
+    line-height:1.05;
+    letter-spacing:-1.8px;
+}
+
+.section-intro{
+    max-width:680px;
+    margin-top:15px;
+    color:var(--muted);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:40px;
+}
+
+.card{
+    padding:28px;
+    min-height:205px;
+    border:1px solid var(--line);
+    border-radius:16px;
+    background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+}
+
+.card-number{
+    color:var(--accent);
+    font-size:12px;
+    font-weight:900;
+}
+
+.card h3{
+    margin-top:20px;
+    font-size:19px;
+}
+
+.card p{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+.download-section{
+    background:linear-gradient(180deg,transparent,rgba(255,255,255,.018),transparent);
+}
+
+.download-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:40px;
+}
+
+.download-card{
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:32px;
+    background:var(--panel);
+}
+
+.platform{
+    color:var(--accent);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.download-card h3{
+    margin-top:10px;
+    font-size:28px;
+}
+
+.download-card p{
+    margin-top:8px;
+    color:var(--muted);
+}
+
+.download-list{
+    display:grid;
+    gap:9px;
+    margin-top:25px;
+}
+
+.download-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    padding:13px 15px;
+    border:1px solid var(--line);
+    border-radius:9px;
+    color:#dbe2df;
+    font-size:13px;
+}
+
+.download-item span{
+    color:var(--accent);
+    font-weight:800;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.info-card{
+    padding:32px;
+    border:1px solid var(--line);
+    border-radius:18px;
+    background:var(--panel);
+}
+
+.info-card h3{
+    font-size:22px;
+}
+
+.info-card p{
+    margin-top:13px;
+    color:var(--muted);
+}
+
+.info-card ul{
+    margin-top:15px;
+    padding-left:19px;
+    color:var(--muted);
+}
+
+.info-card li{
+    margin:6px 0;
+}
+
+.support{
+    text-align:center;
+    padding:110px 0;
+}
+
+.support h2{
+    margin-top:10px;
+    font-size:45px;
+    letter-spacing:-2px;
+}
+
+.support p{
+    max-width:600px;
+    margin:16px auto 0;
+    color:var(--muted);
+}
+
+.email{
+    display:inline-block;
+    margin-top:25px;
+    color:var(--accent);
+    font-weight:800;
+}
+
+footer{
+    border-top:1px solid var(--line);
+    padding:30px 0;
+    color:#68736f;
+    font-size:12px;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.footer-brand{
+    color:#aeb7b4;
+    font-weight:800;
+}
+
+@media(max-width:850px){
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero-grid,
+    .download-grid,
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-art{
+        order:-1;
+    }
+
+    .hero-art img{
+        max-width:380px;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:560px){
+    .container{
+        width:min(100% - 28px,1160px);
+    }
+
+    .hero h1{
+        font-size:72px;
+        letter-spacing:-4px;
+    }
+
+    .hero-subtitle{
+        font-size:19px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .section-title,
+    .support h2{
+        font-size:35px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <a href="#" class="brand">ski<span>Audio</span></a>
+
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#downloads">Downloads</a>
+            <a href="#about">About</a>
+            <a href="#support">Support</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div>
+            <div class="eyebrow">FREE AUDIO PLUGIN · VERSION 1.0</div>
+
+            <h1>ski<span>Q</span></h1>
+
+            <div class="hero-subtitle">
+                Surgical EQ / Effect for Trap, Drill & Modern Hip-Hop.
+            </div>
+
+            <p class="hero-copy">
+                Fast, aggressive and visual frequency control built around
+                modern production workflows. Shape 808s, drums, vocals and
+                instruments with surgical precision while turning EQ into a
+                creative sound-design tool.
+            </p>
+
+            <div class="buttons">
+                <a href="#downloads" class="button button-primary">
+                    DOWNLOAD SKIQ
+                </a>
+
+                <a href="#features" class="button button-secondary">
+                    EXPLORE FEATURES
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-art">
+            <img src="skiQ-logo.jfif" alt="skiQ by skiAudio">
+        </div>
+
+    </div>
+</section>
+
+<section id="features">
+    <div class="container">
+
+        <div class="section-label">THE WORKFLOW</div>
+        <h2 class="section-title">Built for aggressive modern production.</h2>
+
+        <p class="section-intro">
+            skiQ combines surgical EQ control, channel-specific processing
+            and visual analysis into a fast workflow designed for Trap,
+            Drill and modern Hip-Hop.
+        </p>
+
+        <div class="features">
+
+            <div class="card">
+                <div class="card-number">01</div>
+                <h3>16-Band Parametric EQ</h3>
+                <p>
+                    Shape frequencies precisely with Low Cut, Bell, Notch
+                    and High Cut filter types.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">02</div>
+                <h3>Channel Control</h3>
+                <p>
+                    Work directly on Mid, Side, Left or Right channels for
+                    focused frequency shaping.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">03</div>
+                <h3>Real-Time Analysis</h3>
+                <p>
+                    Visualize the spectrum with peak and frequency
+                    information plus analyzer freeze workflow.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">04</div>
+                <h3>808 & Low End</h3>
+                <p>
+                    Focus on sub-frequency management and low-end control
+                    when shaping heavy 808-driven productions.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">05</div>
+                <h3>Creative Processing</h3>
+                <p>
+                    Use halftime processing and rhythmic divisions as part
+                    of the sound-design workflow.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-number">06</div>
+                <h3>DAW Workflow</h3>
+                <p>
+                    VST3 support, DAW automation and a focused interface
+                    designed for fast production decisions.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="downloads" class="download-section">
+    <div class="container">
+
+        <div class="section-label">GET SKIQ</div>
+        <h2 class="section-title">Free download.</h2>
+
+        <p class="section-intro">
+            Choose your platform and format. Download links will be connected
+            to the official skiQ release packages.
+        </p>
+
+        <div class="download-grid">
+
+            <div class="download-card">
+                <div class="platform">WINDOWS · 64-BIT</div>
+                <h3>Windows</h3>
+                <p>VST3, AAX and standalone formats.</p>
+
+                <div class="download-list">
+                    <div class="download-item">
+                        <strong>Windows Installer</strong>
+                        <span>SOON</span>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>VST3</strong>
+                        <span>SOON</span>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>AAX</strong>
+                        <span>SOON</span>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>Standalone</strong>
+                        <span>SOON</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="platform">macOS</div>
+                <h3>macOS</h3>
+                <p>Standalone, VST3 and AAX packages.</p>
+
+                <div class="download-list">
+                    <div class="download-item">
+                        <strong>Standalone</strong>
+                        <span>SOON</span>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>VST3</strong>
+                        <span>SOON</span>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>AAX</strong>
+                        <span>SOON</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+
+        <div class="section-label">ABOUT SKIQ</div>
+        <h2 class="section-title">Frequency control as a creative instrument.</h2>
+
+        <div class="info-grid" style="margin-top:40px;">
+
+            <div class="info-card">
+                <h3>Designed for modern producers</h3>
+                <p>
+                    skiQ is built around the needs of Trap, Drill and
+                    Hip-Hop producers who need fast decisions, controlled
+                    low end and aggressive sound-design possibilities.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Core workflow</h3>
+                <ul>
+                    <li>16-band parametric EQ</li>
+                    <li>Mid / Side / Left / Right processing</li>
+                    <li>Real-time spectrum visualization</li>
+                    <li>Analyzer freeze</li>
+                    <li>808-focused low-frequency workflow</li>
+                    <li>Halftime processing</li>
+                    <li>Input and output gain</li>
+                    <li>DAW automation</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="support" class="support">
+    <div class="container">
+
+        <div class="section-label">SUPPORT</div>
+
+        <h2>Need help with skiQ?</h2>
+
+        <p>
+            For installation, compatibility or product support,
+            contact the skiAudio team.
+        </p>
+
+        <a class="email" href="mailto:sofianexavi6@gmail.com">
+            sofianexavi6@gmail.com
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-brand">skiAudio · skiQ</div>
+        <div>© 2026 skiAudio · Developed by INSOKI</div>
+    </div>
+</footer>
+
+</body>
+</html>
