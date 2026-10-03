@@ -273,7 +273,7 @@ section{
 
 .download-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:18px;
     margin-top:40px;
 }
@@ -590,7 +590,7 @@ footer{
         <h2 class="section-title">Free download.</h2>
 
         <p class="section-intro">
-            Choose your platform and download the official skiQ release package.
+            skiQ for Windows and macOS. FunProgression is the Android instrument.
         </p>
 
         <div class="download-grid">
@@ -647,6 +647,24 @@ footer{
                     <div class="download-item">
                         <strong>AAX</strong>
                         <span>IN PACKAGE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="platform">ANDROID</div>
+                <h3>FunProgression</h3>
+                <p>The instrument. Chords, piano, guitar, oud, and a ringtone bounce. Install the APK on your phone.</p>
+
+                <div class="download-list">
+                    <div class="download-item">
+                        <strong>Android APK · 1.0.0</strong>
+                        <a href="funprogression.apk" download="funprogression.apk">DOWNLOAD</a>
+                    </div>
+
+                    <div class="download-item">
+                        <strong>Package</strong>
+                        <span>com.skiaudio.funprogression</span>
                     </div>
                 </div>
             </div>
