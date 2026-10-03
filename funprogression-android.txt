@@ -1,0 +1,2 @@
+FunProgression Android 1.0.0
+Package: com.skiaudio.funprogression
