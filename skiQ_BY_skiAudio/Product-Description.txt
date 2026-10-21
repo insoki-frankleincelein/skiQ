@@ -1,0 +1,89 @@
+﻿skiQ
+
+Surgical EQ/Effect for Trap, Drill & Modern Hip-Hop
+
+PRICE
+$FREE
+
+SHORT DESCRIPTION
+
+skiQ is a fast, aggressive and visual EQ built for modern music production.
+Shape drums, 808s, vocals and instruments with surgical frequency control,
+channel-specific processing and a real-time spectrum workflow.
+
+Creative Trap Sound Design — Go beyond conventional EQ and turn frequency shaping into an instrument. With direct control over (Mid, Side, Left, and Right) channels and flexible (Bell, Notch, Low Cut, and High Cut) nodes, you can isolate specific frequency ranges and push them into unusual rhythmic movements. Combine the SKI control with 1/2, 1/4, 1/8T, and 1/32 divisions to create evolving, stuttering, filtered, and unpredictable textures — opening up a new workflow for /weird 808s, distorted vocals, aggressive synths, experimental drums, and dark trap sound design.
+
+KEY FEATURES
+
+• 16-band parametric EQ
+• Low Cut / Bell / Notch / High Cut filtering
+• Mid / Side / Left / Right channel modes
+• Real-time spectrum analyzer
+• Peak and frequency visualization
+• Analyzer freeze workflow
+• 808-focused low-frequency control
+• Halftime processing
+• Input and output gain control
+• Smooth spectrum visualization
+• Professional dark interface
+
+
+WHY SKIQ?
+
+Modern trap and drill mixes often need surgical effect/ aggressive low-end control,
+precise vocal shaping and fast decisions.
+
+skiQ is designed around that workflow.
+
+Use it to clean muddy low mids,as an effect, carve space for vocals,
+shape 808s, control harsh frequencies and push individual channels
+without slowing down the creative process.
+
+IDEAL FOR
+
+Trap
+Drill
+Hip-Hop
+808s
+Drums
+Vocals
+Melodic instruments
+Sample processing
+Mix bus shaping
+
+SYSTEM
+
+Windows 10 / Windows 11
+64-bit VST3 host
+64-bit plugin
+
+INSTALLATION
+
+Run the included Windows installer.
+
+skiQ installs the VST3 into the standard Windows VST3 location.
+
+VERSION
+
+1.0
+
+FORMAT
+
+VST3
+
+VENDOR
+
+Insoki
+
+PRODUCT
+
+skiQ
+
+LICENSE
+
+Commercial license.
+free.
+
+SUPPORT
+sofianexavi6@gmail.com
+https://skiq-licensing.insoki-skiq-licensing.workers.dev/buy

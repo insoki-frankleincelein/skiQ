@@ -1,0 +1,28 @@
+﻿Product: skiQ
+Version: 1.0
+Vendor: Insoki
+Category: Effect / EQ
+Price: $FREE
+Format: VST3
+Platform: Windows 10/11 64-bit
+
+Tags:
+EQ, Equalizer, Parametric EQ, Trap, Drill, Hip-Hop, 808,
+Mixing, Mastering, Spectrum Analyzer, Mid Side, VST3
+
+Primary audience:
+Trap producers
+Drill producers
+Hip-Hop producers
+Beatmakers
+Mix engineers
+
+Primary selling points:
+1. Fast surgical EQ workflow
+2. Time / Rhythm Division 
+3. Mid/Side and Left/Right processing
+4. Real-time spectrum analysis
+5. Semi Freeze analyzer workflow
+6. 808 and low-end control
+7. Modern dark professional interface
+

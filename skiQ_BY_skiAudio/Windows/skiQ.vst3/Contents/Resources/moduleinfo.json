@@ -1,0 +1,58 @@
+{
+  "Name": "skiQ",
+  "Version": "1.0.0",
+  "Factory Info": {
+    "Vendor": "skiAudio",
+    "URL": "",
+    "E-Mail": "",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "ABCDEF019182FAEB536B6961536B6961",
+      "Category": "Audio Module Class",
+      "Name": "skiQ",
+      "Vendor": "skiAudio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.11",
+      "Sub Categories": [
+        "Fx",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF011234ABCD536B6961536B6961",
+      "Category": "Component Controller Class",
+      "Name": "skiQ",
+      "Vendor": "skiAudio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.11",
+      "Sub Categories": [
+        "Fx",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF01C0DEF00D536B6961536B6961",
+      "Category": "Plugin Compatibility Class",
+      "Name": "skiQ",
+      "Vendor": "skiAudio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.11",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}

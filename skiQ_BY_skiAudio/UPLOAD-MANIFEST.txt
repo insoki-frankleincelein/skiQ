@@ -1,0 +1,29 @@
+﻿skiQ 1.0 — UPLOAD PACKAGE
+ 
+WINDOWS
+-------
+VST3:
+C:\skiQ\build\skiQ_artefacts\Release\VST3\skiQ.vst3
+
+AAX:
+C:\skiQ\build\skiQ_artefacts\Release\AAX\skiQ.aaxplugin
+
+Standalone:
+C:\skiQ\build\skiQ_artefacts\Release\Standalone\skiQ.exe
+
+Installer:
+C:\skiQ\Installer\Output\skiQ-Windows-Setup.exe
+
+MACOS
+-----
+
+macOS AU/VST3/AAX 
+
+SOURCE BACKUP
+-------------
+C:\skiQ_Backup
+
+FREE SERIAL
+-----------
+SKIQ-INSO-KI95-SKIA-UDIO
+

@@ -1,0 +1,41 @@
+﻿skiQ 1.0 — FEATURE SHEET
+
+EQ
+16-band parametric EQ
+Low Cut
+Bell
+Notch
+High Cut
+
+CHANNEL CONTROL
+Mid
+Side
+Left
+Right
+
+ANALYSIS
+Real-time spectrum
+Peak visualization
+Frequency visualization
+Analyzer freeze
+Smooth spectrum
+
+LOW END
+808-focused control
+Sub-frequency management
+Low-end bypass workflow
+
+CREATIVE
+Halftime processing
+Halftime mix
+Halftime smoothing
+
+OUTPUT
+Input gain
+Output gain
+
+WORKFLOW
+VST3
+DAW automation
+Windows 64-bit
+FL Studio compatible

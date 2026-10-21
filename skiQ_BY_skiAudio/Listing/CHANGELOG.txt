@@ -1,0 +1,13 @@
+﻿skiQ 1.0 — Initial commercial release
+
+• 16-band EQ engine
+• Mid / Side / Left / Right processing
+• Multiple filter types
+• Real-time spectrum analyzer
+• Peak/frequency visualization
+• Analyzer freeze
+• 808 low-frequency workflow
+• Halftime processing
+• Input/output gain
+• DAW automation
+• Commercial licensing
